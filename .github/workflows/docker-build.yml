@@ -3,7 +3,7 @@ name: Build Docker Image
 on:
   push:
     branches:
-      - Production
+      - production
 
 jobs:
   build:
@@ -17,4 +17,3 @@ jobs:
 
       - name: Build Docker Image
         run: docker build -t my-node-app:latest . 
- 
